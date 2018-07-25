@@ -41,13 +41,13 @@ generated in the same directory as the jar file. This folder can be renamed in t
 button will close out of the program.
 
 ### Quick Reference Sheet
-	- File Name: Name of the log file generated. Must have something inside of it.
-	- Begin/End: Starts and stops the logging process. Will always start on the left side.
-	             Only starts if the file name box is populated.
-	- Pause/Play: Pauses and plays the timer. Only works when the program has begun.
-	- SpaceBar: Pauses and plays timer. Only works when the program has begun.
-	- 1/2: Keyboard button to switch views. 1 switches to left, 2 switches to right.
-	- Close: Closes out of the program.
+- File Name: Name of the log file generated. Must have something inside of it.
+- Begin/End: Starts and stops the logging process. Will always start on the left side.
+             Only starts if the file name box is populated.
+- Pause/Play: Pauses and plays the timer. Only works when the program has begun.
+- SpaceBar: Pauses and plays timer. Only works when the program has begun.
+- 1/2: Keyboard button to switch views. 1 switches to left, 2 switches to right.
+- Close: Closes out of the program.
 
 
 
