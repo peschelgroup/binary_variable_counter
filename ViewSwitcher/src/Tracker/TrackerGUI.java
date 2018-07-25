@@ -171,6 +171,7 @@ public class TrackerGUI{
 		btnClose.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 		        frmViewTracker.dispose();
+		        System.exit(0);
 		    }
 		});
 		
@@ -223,16 +224,16 @@ public class TrackerGUI{
 					
 					f = new FileHandler(txtName.getText(), "participants");
 					f.writeToFile("==============================================Left===============================================\n");
-					for(int x = 0; x < lModel.getRowCount(); x++){
+					for(int x = 0; x < lModel.getRowCount()-1; x++){
 						f.writeToFile(String.format("%s,%s,%s,%s\n", "" + lModel.getValueAt(x, 0), "" + lModel.getValueAt(x, 1), "" + lModel.getValueAt(x, 2), "" + lModel.getValueAt(x, 3)));
 					}
-					f.writeToFile(String.format("\n%s,%s,%s", lModel.getRowCount(), "" + timer.getTime(lDur), String.format("%2.2f", percentage(lDur+rDur, lDur)) + "%"));
+					f.writeToFile(String.format("\n%s,%s,%s", lModel.getRowCount()-1, "" + timer.getTime(lDur), String.format("%2.2f", percentage(lDur+rDur, lDur)) + "%"));
 					f.writeToFile("\n==============================================Left===============================================\n\n\n\n");
 					f.writeToFile("==============================================Right===============================================\n");
-					for(int x = 0; x < rModel.getRowCount(); x++){
+					for(int x = 0; x < rModel.getRowCount()-1; x++){
 						f.writeToFile(String.format("%s,%s,%s,%s\n", "" + rModel.getValueAt(x, 0), "" + rModel.getValueAt(x, 1), "" + rModel.getValueAt(x, 2), "" + rModel.getValueAt(x, 3)));
 					}
-					f.writeToFile(String.format("\n%s,%s,%s", rModel.getRowCount(), "" + timer.getTime(lDur), String.format("%2.2f", percentage(lDur+rDur, rDur)) + "%"));
+					f.writeToFile(String.format("\n%s,%s,%s", rModel.getRowCount()-1, "" + timer.getTime(lDur), String.format("%2.2f", percentage(lDur+rDur, rDur)) + "%"));
 					f.writeToFile("\n==============================================Right===============================================\n\n\n\n");
 					f.close();
 				}
