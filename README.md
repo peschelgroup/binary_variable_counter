@@ -2,7 +2,7 @@
 Usage: The Binary Variable Counter is a program which allows you to measure the change in
 state of a proccess.
 
-###Install and Setup
+### Install and Setup
 1. Download the project directory from our GitHub page.
 	- Inside the ViewSwitcher Directory is a precompiled jar file
 	- Alternatively, this program was written in Eclipse, so it can be reimported
@@ -12,7 +12,7 @@ state of a proccess.
    - *NOTE: If you choose to recompile the jar file yourself, make sure to compile the version
 	  specific to your operating system*
 
-###How To Use
+### How To Use
 When the jar file is ran, a gui prompting for a file name, a left and right box, a begin
 button, a pause button, and a close button. The program will not run unless the file name text box
 has some sort of text inside of it. Once this box is populated, the begin button will start the logging
@@ -40,7 +40,7 @@ generated in the same directory as the jar file. This folder can be renamed in t
 225. Changing the value of the second parameter will change the name of the folder generated. Pressing the close
 button will close out of the program.
 
-###Quick Reference Sheet
+### Quick Reference Sheet
 	- File Name: Name of the log file generated. Must have something inside of it.
 	- Begin/End: Starts and stops the logging process. Will always start on the left side.
 	             Only starts if the file name box is populated.
