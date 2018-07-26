@@ -29,21 +29,23 @@ refers to the length of time with which the value was in this state. End refers 
 flipped to it's second state. It should be noted that pressing the 1 or 2 key twice will not change the logger
 to the opposite state.
 
-Pressing what was once the "Begin", now the "End" key, will result in the timer ending and all further data
-logging to cease. At the bottom of the table, there will be a new row with 3 new columns, the fourth will be empty.
-In this new row on both tables, there will be the total number of times the value was in that state, the total
-duration that the value stated in that state, and the percentage of time it was in that state in relation to the total 
-time that the value was being measured. Pressing the end button will also generate a log file with all measurements
-taken and the statistics generated previously. Pressing "Begin" again will start a new log. Note, if the name isn't
-changed, it will completely overwrite the file. All generated log files will be storaged in a folder titled "participants"
-generated in the same directory as the jar file. This folder can be renamed in the TrackerGUI.java file on line
-225. Changing the value of the second parameter will change the name of the folder generated. Pressing the close
-button will close out of the program.
+Pressing what was once the "Begin", now the "End" button, will result in the timer ending and all further data
+logging to cease. *Pressing this button is what logs the file* At the bottom of the table, there will be a new row 
+with 3 new columns, the fourth will be empty. In this new row on both tables, there will be the total number of times 
+the value was in that state, the total duration that the value stated in that state, and the percentage of time it was 
+in that state in relation to the total time that the value was being measured. Pressing the end button will also generate 
+a log file with all measurements taken and the statistics generated previously. Pressing "Begin" again will start a new 
+log. Note, if the name isn't changed, it will completely overwrite the file. All generated log files will be storaged 
+in a folder titled "participants" generated in the same directory as the jar file. This folder can be renamed in the 
+TrackerGUI.java file on line 225. Changing the value of the second parameter will change the name of the folder generated. 
+Pressing the close button will close out of the program.
 
 ### Quick Reference Sheet
 - File Name: Name of the log file generated. Must have something inside of it.
 - Begin/End: Starts and stops the logging process. Will always start on the left side.
              Only starts if the file name box is populated.
+			 
+			 - *Pressing "End" is what outputs to a file*
 - Pause/Play: Pauses and plays the timer. Only works when the program has begun.
 - SpaceBar: Pauses and plays timer. Only works when the program has begun.
 - 1/2: Keyboard button to switch views. 1 switches to left, 2 switches to right.
