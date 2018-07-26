@@ -45,7 +45,7 @@ Pressing the close button will close out of the program.
 - Begin/End: Starts and stops the logging process. Will always start on the left side.
              Only starts if the file name box is populated.
 			 
-			 - *Pressing "End" is what outputs to a file*
+	- *Pressing "End" is what outputs to a file*
 - Pause/Play: Pauses and plays the timer. Only works when the program has begun.
 - SpaceBar: Pauses and plays timer. Only works when the program has begun.
 - 1/2: Keyboard button to switch views. 1 switches to left, 2 switches to right.
