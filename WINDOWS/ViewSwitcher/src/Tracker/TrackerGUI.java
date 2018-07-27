@@ -233,7 +233,7 @@ public class TrackerGUI{
 					for(int x = 0; x < rModel.getRowCount()-1; x++){
 						f.writeToFile(String.format("%s,%s,%s,%s\n", "" + rModel.getValueAt(x, 0), "" + rModel.getValueAt(x, 1), "" + rModel.getValueAt(x, 2), "" + rModel.getValueAt(x, 3)));
 					}
-					f.writeToFile(String.format("\n%s,%s,%s", rModel.getRowCount()-1, "" + timer.getTime(lDur), String.format("%2.2f", percentage(lDur+rDur, rDur)) + "%"));
+					f.writeToFile(String.format("\n%s,%s,%s", rModel.getRowCount()-1, "" + timer.getTime(rDur), String.format("%2.2f", percentage(lDur+rDur, rDur)) + "%"));
 					f.writeToFile("\n==============================================Right===============================================\n\n\n\n");
 					f.close();
 				}
